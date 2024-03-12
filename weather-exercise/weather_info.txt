@@ -1,0 +1,27 @@
+The 'weather.py' code snippet showcases basic data manipulation, analysis, and statistics calculations using Pandas in Python.
+
+
+Read and Analyze Data:
+
+Reads data from 'weather_data.csv' using Pandas and stores it in a variable named data.
+Prints the entire dataset (data) to the console.
+Prints the 'condition' column of the dataset.
+Data Structures in Pandas:
+
+Demonstrates that Pandas has two primary data structures: Series (1-dimensional) and DataFrame (2-dimensional), which are widely used across industries.
+Convert Data:
+
+Converts the dataset (data) into a dictionary (table_dictionary) using data.to_dict().
+Converts the 'temp' column of the dataset into a list (temp_list) using data['temp'].to_list().
+Calculate Statistics:
+
+Calculates and prints the average temperature (avg_temp) using the elements in temp_list.
+Calculates and prints the mean temperature (mean) using data['temp'].mean().
+Finds and prints the maximum temperature (maximum) using data['temp'].max().
+Filter Data:
+
+Filters and prints the entire row where the 'day' column is 'Monday'.
+Finds and prints the row where the temperature is equal to the maximum temperature.
+Convert Temperature:
+
+Converts Monday's temperature from Celsius to Fahrenheit and prints both values.

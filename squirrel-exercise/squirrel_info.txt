@@ -1,0 +1,26 @@
+Squirrel Census Data Analysis:
+
+The provided code snippet involves several aspects of data wrangling using Pandas in Python. Data wrangling, also known as data munging or data preprocessing, refers to the process of cleaning, transforming, and preparing raw data into a format suitable for analysis or further processing. Here's how the code demonstrates data wrangling:
+
+Reading and Loading Data:
+
+Reads data from a CSV file using pandas.read_csv('filename.csv') and loads it into a Pandas DataFrame (data).
+Data Filtering:
+
+Filters the data based on specific criteria (in this case, filtering squirrels by their primary fur colors 'Gray', 'Black', and 'Cinnamon') using boolean indexing.
+Data Aggregation:
+
+Aggregates and counts the number of occurrences for each category ('Gray', 'Black', 'Cinnamon').
+Creating and Manipulating Data Structures:
+
+Creates a dictionary (dict_fur) to store the aggregated data.
+Converts the dictionary into a DataFrame (fur_frame) for easier analysis and visualization.
+Saving Processed Data:
+
+Saves the processed data (fur color counts) to a CSV file named 'squirrel_count.csv' using fur_frame.to_csv().
+Applying Functions:
+
+Defines and applies a function (celsius_to_fahrenheit) to convert temperature values from Celsius to Fahrenheit.
+Data Transformation:
+
+Adds a new column ('Temperature_Fahrenheit') to the DataFrame (df) containing the converted temperature values.
