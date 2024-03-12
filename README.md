@@ -7,6 +7,7 @@ We will primarily use two powerful libraries in Python for data wrangling:
   2. **PySpark with Azure Databricks**: We will also explore data wrangling using PySpark, which is a Python API for Apache Spark, a distributed computing framework. We'll leverage Azure Databricks, a cloud-based platform for big data analytics, to work with large-scale datasets and perform data wrangling tasks using PySpark.
 
 **Topics Covered**
+
 In this tutorial, we will cover the following topics:
 
 1. Introduction to Data Wrangling: Understanding the importance of data wrangling and its role in data analysis.
@@ -18,6 +19,7 @@ In this tutorial, we will cover the following topics:
 7. Exercise: A hands-on exercise using PySpark with Azure Databricks to wrangle a large dataset and prepare it for analysis.
 
 **Requirements**
+
 To follow along with this tutorial, you'll need the following:
 
 Python installed on your machine: 3.6 (the lowest version you can use is 3.10)
