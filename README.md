@@ -22,11 +22,11 @@ In this tutorial, we will cover the following topics:
 
 To follow along with this tutorial, you'll need the following:
 
-Python installed on your machine: 3.6 (the lowest version you can use is 3.10)
-Jupyter Notebook or any Python IDE of your choice (PyCharm, Visual Studio Code, etc)
-Pandas library installed (pip install pandas)
-PySpark library installed (pip install pyspark)
-Access to an Azure Databricks workspace (optional, for the exercise)
+- Python installed on your machine: 3.6 (the lowest version you can use is 3.10)
+- Jupyter Notebook or any Python IDE of your choice (PyCharm, Visual Studio Code, etc)
+- Pandas library installed (pip install pandas)
+- PySpark library installed (pip install pyspark)
+- Access to an Azure Databricks workspace (optional, for the exercise)
 
 ## Getting Started
 To get started, clone or download the tutorial repository from GitHub. Each section of the tutorial will be provided in separate Jupyter Notebook files, along with the necessary datasets for practice.
