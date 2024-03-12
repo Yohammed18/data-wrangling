@@ -1,10 +1,9 @@
 # Data Wrangling Tutorial
-Introduction
+**Introduction**
 Welcome to the Data Wrangling Tutorial! In this tutorial, we will explore the concept of data wrangling and learn how to clean, transform, and prepare data using Python. Data wrangling is a crucial step in the data analysis process, involving tasks such as handling missing values, data cleaning, feature engineering, and data formatting.
 
 We will primarily use two powerful libraries in Python for data wrangling:
-
-Pandas: Pandas is a widely-used library for data manipulation and analysis. It provides data structures like DataFrames and Series, along with a variety of functions and methods for data manipulation, aggregation, and transformation.
+  - Pandas: Pandas is a widely-used library for data manipulation and analysis. It provides data structures like DataFrames and Series, along with a variety of functions and methods for data manipulation, aggregation, and transformation.
 
 PySpark with Azure Databricks: We will also explore data wrangling using PySpark, which is a Python API for Apache Spark, a distributed computing framework. We'll leverage Azure Databricks, a cloud-based platform for big data analytics, to work with large-scale datasets and perform data wrangling tasks using PySpark.
 
