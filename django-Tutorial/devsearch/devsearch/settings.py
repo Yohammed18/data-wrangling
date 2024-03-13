@@ -14,6 +14,8 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# create the template directory to connect to all the html files
+TEMPLATES_DIR = Path.joinpath(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -55,7 +57,8 @@ ROOT_URLCONF = 'devsearch.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # all the temp dir will be store in this list
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

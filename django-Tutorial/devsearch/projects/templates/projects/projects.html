@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block blockname %}
+<p>Welcome to the Template Home <strong>{{ username.name }}</strong></p>
+
+<!-- condition  -->
+
+<!-- {% if number > 10 %}
+<p>Number is greater than 10</p>
+{% else %}
+<p>Number is less than 10</p>
+{% endif %} -->
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium magni voluptates aliquid expedita saepe
+    soluta ut porro! Consequatur, nisi. Alias rem ex vel saepe. Facilis ducimus autem voluptatibus aperiam.
+</p>
+
+<h3>Books</h3>
+<ul>
+    {% for project in projects %}
+    <li>Name: <a href="{%  url 'project' project.id%}">{{ project.title }}</a>
+        <ul>
+            <li>
+                Description: {{project.description}}
+            </li>
+
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock blockname %}
