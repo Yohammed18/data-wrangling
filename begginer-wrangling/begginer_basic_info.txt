@@ -1,0 +1,31 @@
+
+This code is a Python script that uses the Pandas library to work with tabular data from a CSV file. Here's a synopsis of what each part of the code does:
+
+Importing necessary libraries:
+
+Imports Pandas as pd and NumPy as np.
+Loading CSV data from a URL:
+
+Uses the Pandas read_csv function to load data from a CSV file hosted on GitHub.
+Displaying data:
+
+Prints the top 5 and bottom 5 records using head() and tail() functions.
+Prints the top 10 and bottom 10 records separately.
+Checking data dimensions:
+
+Uses the shape attribute to find the number of rows and columns in the DataFrame.
+Summarizing data:
+
+Uses info() to get a summary of the DataFrame, including column names, data types, and non-null counts.
+Uses describe() to get statistical summary (like mean, min, max, etc.) of the numerical columns.
+Renaming columns:
+
+Renames the 'password' column to 'secret password' using rename().
+Adding and removing columns:
+
+Adds a new column 'US Citizen' with all values set to True using direct assignment.
+Drops the 'US Citizen' column using drop().
+Adding and removing rows:
+
+Adds a new row using loc[len(data.index)], although this is not recommended as it's better to use append().
+Drops rows from index 500 onwards using drop().

@@ -1,6 +1,5 @@
 # import panda with alias pd
 import pandas as pd 
-import numpy as np 
 
 # store the csv file in a variable. (in this case we are retriving the csv file from a website)
 url = 'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-14/passwords.csv'
