@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 
 {% block blockname %}
-<a href="{% url 'projects' %}">Home</a>
+<a href="{% url 'projects' %}">
+    <h2>Projects Page</h2>
+</a>
 <h1>{{ project.title}}</h1>
+<hr>
+
+{% for tag in tags %}
+<span style="border: 2px;">{{tag}}</span>
+{% endfor %}
+
+<hr>
 <br>
 <p>{{ project.description}}</p>
 {% endblock blockname%}

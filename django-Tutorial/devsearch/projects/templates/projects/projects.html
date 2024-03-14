@@ -2,33 +2,27 @@
 
 
 {% block blockname %}
-<p>Welcome to the Template Home <strong>{{ username.name }}</strong></p>
-
-<!-- condition  -->
-
-<!-- {% if number > 10 %}
-<p>Number is greater than 10</p>
-{% else %}
-<p>Number is less than 10</p>
-{% endif %} -->
-
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias accusantium magni voluptates aliquid expedita saepe
-    soluta ut porro! Consequatur, nisi. Alias rem ex vel saepe. Facilis ducimus autem voluptatibus aperiam.
-</p>
-
-<h3>Books</h3>
-<ul>
-    {% for project in projects %}
-    <li>Name: <a href="{%  url 'project' project.id%}">{{ project.title }}</a>
-        <ul>
-            <li>
-                Description: {{project.description}}
-            </li>
-
-        </ul>
-    </li>
-    {% endfor %}
-</ul>
-
+<h1>Projects Table</h1>
+<table border="4px">
+    <thead >
+        <tr>
+            <th>ID</th>
+            <th>Projects</th>
+            <th>Votes</th>
+            <th>Ratio</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for project in projects %}
+        <tr>
+            <td><a href="{%  url 'project' project.id%}">{{project.title}}</a></td>
+            <td>{{project.vote_total}}</td>
+            <td>{{project.vote_ratio}}</td>
+            <td>{{project.created}}</td>
+            <td>{{project.description}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock blockname %}
